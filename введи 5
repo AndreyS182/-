@@ -1,12 +1,21 @@
-public class DoWhile {
+import java.util.Scanner;
+
+public class Usedd {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-  int value; //переменная видна только в пределах фигурных скобок
-    do {
-        System.out.println("Введи пять");
-        value = scanner.nextInt();
-        System.out.println("Это не пять");//то, что вводим в клавиатуре
-    } while(value!=5);
-    System.out.println("Другое дело");
+        int x;
+        do {
+            System.out.println("Введи пять");
+            x = scanner.nextInt();
+            if (x != 5) {
+                System.out.println("Это не пять");
+            }
+            }
+            while (x != 5); {
+                System.out.println("Другое дело");
+            }
+        }
     }
-    }
+
+
+
